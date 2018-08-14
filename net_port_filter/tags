@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CURRENT_PATH	Makefile	/^    CURRENT_PATH:=$(shell pwd)$/;"	m
+LINUX_KERNEL_PATH	Makefile	/^    LINUX_KERNEL_PATH:=\/lib\/modules\/$(shell uname -r)\/build$/;"	m
+MODULE	port_filter.c	17;"	d	file:
+__KERNEL__	port_filter.c	16;"	d	file:
+check_tcp_packet	port_filter.c	/^static int check_tcp_packet(struct sk_buff* skb)$/;"	f	file:	signature:(struct sk_buff* skb)
+cleanup_module	port_filter.c	/^void cleanup_module()$/;"	f
+drop_if	port_filter.c	/^static char *drop_if="lo";$/;"	v	file:
+hook_func	port_filter.c	/^unsigned int hook_func(unsigned int hooknum,$/;"	f	signature:(unsigned int hooknum, struct sk_buff *skb, const struct net_device *in, const struct net_device *out, int (*okfn)(struct sk_buff *))
+inet_addr	port_filter.c	/^unsigned int inet_addr(char *str)$/;"	f	signature:(char *str)
+init_module	port_filter.c	/^int init_module()$/;"	f
+nfho	port_filter.c	/^static struct nf_hook_ops nfho;$/;"	v	typeref:struct:nf_hook_ops	file:
+parg	port_filter.c	/^static char *parg="192.168.2.1";$/;"	v	file:
